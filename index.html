@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#050a10">
+  <title>ARGON | منصة أرجون التعليمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="particles" id="particles"></div>
+
+<header class="topbar">
+  <button class="icon-btn" id="menuBtn" aria-label="القائمة">☰</button>
+  <div class="brand">
+    <div class="brand-mark">⚛</div>
+    <div><b>ARGON</b><small>منصة أرجون التعليمية</small></div>
+  </div>
+  <div class="top-spacer"></div>
+</header>
+
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="brand"><div class="brand-mark">⚛</div><div><b>ARGON</b><small>منصة أرجون</small></div></div>
+    <button class="icon-btn" id="closeMenu">×</button>
+  </div>
+  <nav>
+    <a class="active" href="#home">⌂ <span>الرئيسية</span></a>
+    <a href="#chapters">▣ <span>الأبواب</span></a>
+    <a href="#account">♙ <span>حسابي</span></a>
+  </nav>
+  <div class="drawer-card">
+    <b>رحلتك نحو التفوق تبدأ هنا</b>
+    <span>شرح واضح، محتوى منظم، ومتابعة مستمرة.</span>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<main id="home">
+  <section class="hero section reveal">
+    <div class="hero-copy">
+      <div class="eyebrow">🧪 مع أ/ أحمد رمضان</div>
+      <h1>منصة أرجون<br><em>في الكيمياء</em></h1>
+      <p>رحلتك نحو التفوق تبدأ من هنا..<br>شرح بسيط • أفكار واضحة • نتائج مضمونة</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#chapters">ابدأ الآن <span>←</span></a>
+        <a class="btn outline" href="#chapters">استكشف الأبواب <span>▣</span></a>
+      </div>
+    </div>
+    <div class="teacher-wrap">
+      <div class="ring"></div>
+      <img src="ahmed-ramadan.jpg" alt="أ/ أحمد رمضان مدرس الكيمياء">
+      <div class="teacher-label"><b>أ/ أحمد رمضان</b><span>مدرس الكيمياء</span></div>
+    </div>
+  </section>
+
+  <section class="features section reveal">
+    <div><b>◉</b><strong>فيديوهات عالية الجودة</strong><span>شرح واضح ومباشر</span></div>
+    <div><b>✓</b><strong>متابعة مستمرة</strong><span>لتحقيق هدفك الدراسي</span></div>
+    <div><b>◆</b><strong>محتوى منظم</strong><span>بسيط وسهل</span></div>
+    <div><b>◈</b><strong>دعم فني</strong><span>على مدار الساعة</span></div>
+  </section>
+
+  <section class="section chapters" id="chapters">
+    <div class="section-head">
+      <div><span>🧪</span><h2>أبواب الكيمياء</h2><p>اختار الباب وابدأ دروسك مباشرة</p></div>
+    </div>
+
+    <div class="chapter-grid">
+      <button class="chapter-card" data-chapter="transition">
+        <div class="chapter-number">01</div>
+        <div class="chapter-icon">⚛</div>
+        <div class="chapter-content">
+          <span>الباب الأول</span>
+          <h3>العناصر الانتقالية</h3>
+          <p>الدروس والشرح والتطبيقات الخاصة بباب العناصر الانتقالية.</p>
+        </div>
+        <span class="chapter-arrow">←</span>
+      </button>
+
+      <button class="chapter-card" data-chapter="analysis">
+        <div class="chapter-number">02</div>
+        <div class="chapter-icon">⚗</div>
+        <div class="chapter-content">
+          <span>الباب الثاني</span>
+          <h3>التحليل الكيميائي</h3>
+          <p>الدروس والتفاعلات والأفكار المهمة في التحليل الكيميائي.</p>
+        </div>
+        <span class="chapter-arrow">←</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="quote section reveal">
+    <img src="ahmed-ramadan.jpg" alt="">
+    <div><span>“</span><h2>الكيمياء مش مجرد مادة..<br>دي لغة تفكير وحياة.</h2><b>أ/ أحمد رمضان</b></div>
+  </section>
+
+  <section class="account-section section reveal" id="account">
+    <div class="account-card">
+      <div class="account-icon">♙</div>
+      <div class="account-copy">
+        <span class="account-kicker">حساب الطالب</span>
+        <h2 id="accountHeading">سجّل حسابك وابدأ رحلتك</h2>
+        <p id="accountStatus">احفظ تقدمك على هذا الجهاز وادخل لحسابك في أي وقت.</p>
+      </div>
+      <button class="btn primary" id="accountBtn">تسجيل حساب</button>
+    </div>
+  </section>
+</main>
+
+<section class="page-view" id="chapterPage" hidden>
+  <div class="page-inner section">
+    <button class="back-btn" id="backHome">→ العودة للأبواب</button>
+    <div class="page-title">
+      <span id="chapterBadge">الباب الأول</span>
+      <h1 id="chapterTitle">العناصر الانتقالية</h1>
+      <p id="chapterDescription">دروس الباب</p>
+    </div>
+    <div class="lesson-list" id="chapterLessons"></div>
+  </div>
+</section>
+
+<section class="page-view" id="accountPage" hidden>
+  <div class="page-inner section">
+    <button class="back-btn" id="backAccount">→ العودة للرئيسية</button>
+    <div class="auth-card" id="authCard">
+      <div class="auth-logo">⚛</div>
+      <span class="account-kicker">حساب الطالب</span>
+      <h1 id="authTitle">إنشاء حساب جديد</h1>
+      <p id="authSubtitle">أنشئ حسابًا لحفظ بياناتك وتقدمك على هذا الجهاز.</p>
+
+      <form id="authForm">
+        <label>الاسم
+          <input id="nameInput" type="text" autocomplete="name" placeholder="اكتب اسمك" required>
+        </label>
+        <label>البريد الإلكتروني
+          <input id="emailInput" type="email" autocomplete="email" placeholder="example@email.com" required>
+        </label>
+        <label>كلمة المرور
+          <input id="passwordInput" type="password" autocomplete="new-password" placeholder="6 أحرف على الأقل" minlength="6" required>
+        </label>
+        <button class="btn primary full" type="submit" id="authSubmit">إنشاء الحساب</button>
+      </form>
+      <button class="switch-auth" id="switchAuth">لديك حساب بالفعل؟ تسجيل الدخول</button>
+      <p class="auth-note">هذا تسجيل محلي داخل المتصفح. لربط الحسابات بقاعدة بيانات فعلية نحتاج Backend وقاعدة بيانات.</p>
+    </div>
+
+    <div class="profile-card" id="profileCard" hidden>
+      <div class="profile-avatar">♙</div>
+      <span class="account-kicker">أنت مسجل الدخول</span>
+      <h1 id="profileName"></h1>
+      <p id="profileEmail"></p>
+      <div class="profile-stats"><div><b>2</b><span>أبواب</span></div><div><b>0</b><span>دروس مكتملة</span></div><div><b>0%</b><span>التقدم</span></div></div>
+      <button class="btn outline full" id="logoutBtn">تسجيل الخروج</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand"><div class="brand-mark">⚛</div><div><b>ARGON</b><small>منصة أرجون التعليمية</small></div></div>
+  <p>مع أ/ أحمد رمضان • طريقك نحو التفوق</p>
+  <div class="social-links">
+    <a href="https://wa.me/201275257838" target="_blank" rel="noopener" aria-label="واتساب">واتساب</a>
+    <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="تيك توك">تيك توك</a>
+  </div>
+  <small>© 2026 ARGON — جميع الحقوق محفوظة</small>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/201275257838" target="_blank" rel="noopener" aria-label="تواصل معنا على واتساب">
+  <span class="whatsapp-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" role="img">
+      <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.5-8.4ZM12.1 21.7h-.1c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.3C2.2 6.4 6.7 2 12.1 2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.9 6.9c0 5.4-4.4 9.9-9.8 9.9Zm5.4-7.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.3-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.6 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.2-.6-.4Z"/>
+    </svg>
+  </span>
+  <span class="whatsapp-text">تواصل معنا</span>
+</a>
+<nav class="bottom-nav">
+  <a class="active" href="#home">⌂<span>الرئيسية</span></a>
+  <a href="#chapters">▣<span>الأبواب</span></a>
+  <a href="#account">♙<span>حسابي</span></a>
+</nav>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
